@@ -30,7 +30,7 @@ The X-LINUX-AWS generic versioning v**x**.**y**.**z** is built as follows:
 * **z**: patch version to introduce bug fixes. A patch version is implemented in a backward compatible manner.
 
 ## Further information on X-LINUX-AWS Expansion Package
-<https://wiki.st.com/stm32mpu/wiki/X-LINUX-AWS_expansion_package>
+<https://wiki.st.com/stm32mpu/wiki/X-LINUX-AWS_Expansion_Package>
 
 ## Further information on how to install and how to use X-LINUX-AWS Starter package
 <https://wiki.st.com/stm32mpu/wiki/X-LINUX-AWS_Starter_package>
