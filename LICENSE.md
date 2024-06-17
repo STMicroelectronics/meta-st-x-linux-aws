@@ -46,7 +46,7 @@ List of software needed by X-LINUX-AWS expansion package, installed on image **s
 | optee-os-stm32mp| optee-os-stm32mp | 3.19.0-stm32mp-r2|[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| OPTEE TA development kit for stm32mp<br><br>Customized by *meta-st-x-linux-aws* to bring PKCS#11 Trusted Application for OP-TEE.
 | p11-kit | p11-kit | 0.24.1|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Provides a way to load and enumerate PKCS#11 modules
 | pcsc-lite | libpcsclite1  | 1.9.9|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)|PC/SC Lite smart card framework and applications
-| pkgconfig_git | pkgconfig  | 0.29.2+git0+d97db4fae4|[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)|  Tool used when compiling applications and libraries. It helps determined the correct compiler/link options. It is also language-agnostic.
+| pkgconfig_git | pkgconfig  | 0.29.2+git0+d97db4fae4|[GPL-2.0-or-later](https://opensource.org/license/gpl-2-0)|  Tool used when compiling applications and libraries. It helps determined the correct compiler/link options. It is also language-agnostic.
 | python3-cffi | python3-cffi  |1.15.1|[MIT](https://opensource.org/license/mit)| Foreign Function Interface for Python calling C code
 | python3-cryptography | python3-cryptography | 39.0.2| [Annex 2](#annex-2) | Provides cryptographic recipes and primitives to python developers
 | python3-ply | python3-ply  | 3.11|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Python Lex and Yacc implementation

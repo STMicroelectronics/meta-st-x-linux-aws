@@ -1,5 +1,5 @@
-DESCRIPTION="\
-This package has been patched by X-LINUX-AWS to \
+DESCRIPTION=+"\
+Customized by X-LINUX-AWS to \
 create a tpm2_pkcs11 directory in /etc/ to avoid \
 storing tpm2 pkcs11 context in $HOME directory \
 when TPM2_PKCS11_STORE is not defined."

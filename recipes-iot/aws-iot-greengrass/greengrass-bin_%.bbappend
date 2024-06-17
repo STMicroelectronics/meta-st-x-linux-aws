@@ -1,5 +1,5 @@
 DESCRIPTION += "\
-This package has been patched by X-LINUX-AWS to provide \
+Customized by X-LINUX-AWS to provide \
 Greengrass PKCS#11 provider component, \
 configuration file and AmazonRootCA1."
 GG_BASE = "opt/greengrass"
