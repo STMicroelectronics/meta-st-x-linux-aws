@@ -38,15 +38,15 @@ List of software needed by X-LINUX-AWS expansion package, installed on image **s
 
 | Recipe Name     |  Package Name  | Version | License  | Description  
 |----------       |----------      |-------- |--------  |--------
-| ccid | ccid  | 1.5.2|[LGPL-2.1-or-later](https://opensource.org/license/lgpl-2-1)|Generic USB CCID smart card reader driver
-| libtasn1 | libtasn1-6  | 4.19.0|[LGPL-2.1-or-later](https://opensource.org/license/lgpl-2-1)|A highly portable C library that encodes and decodes
-| libusb-compat | libusb-0.1-4  | 0.1.8|[LGPL-2.1-or-later](https://opensource.org/license/lgpl-2-1)| libusb-0.1 compatibility layer for libusb1
+| ccid | ccid  | 1.5.2|[LGPL-2.1](https://opensource.org/license/lgpl-2-1)|Generic USB CCID smart card reader driver
+| libtasn1 | libtasn1-6  | 4.19.0|[LGPL-2.1](https://opensource.org/license/lgpl-2-1)|A highly portable C library that encodes and decodes
+| libusb-compat | libusb-0.1-4  | 0.1.8|[LGPL-2.1](https://opensource.org/license/lgpl-2-1)| libusb-0.1 compatibility layer for libusb1
 | opensc | opensc | 0.23.0 |[LGPL-2.1](https://opensource.org/license/lgpl-2-1)| Smart card library and applications.
 | optee-client| optee-client | 3.19.0+git0+140bf46304-r1 |[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause) | Normal World Client side of the TEE<br><br>Customized by *meta-st-x-linux-aws* to bring fix PKCS#11 Trusted Application token information support on 64bit architecture.
 | optee-os-stm32mp| optee-os-stm32mp | 3.19.0-stm32mp-r2|[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| OPTEE TA development kit for stm32mp<br><br>Customized by *meta-st-x-linux-aws* to bring PKCS#11 Trusted Application for OP-TEE.
 | p11-kit | p11-kit | 0.24.1|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Provides a way to load and enumerate PKCS#11 modules
 | pcsc-lite | libpcsclite1  | 1.9.9|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)|PC/SC Lite smart card framework and applications
-| pkgconfig_git | pkgconfig  | 0.29.2+git0+d97db4fae4|[GPL-2.0-or-later](https://opensource.org/license/gpl-2-0)|  Tool used when compiling applications and libraries. It helps determined the correct compiler/link options. It is also language-agnostic.
+| pkgconfig_git | pkgconfig  | 0.29.2+git0+d97db4fae4|[GPL-2.0](https://opensource.org/license/gpl-2-0)|  Tool used when compiling applications and libraries. It helps determined the correct compiler/link options. It is also language-agnostic.
 | python3-cffi | python3-cffi  |1.15.1|[MIT](https://opensource.org/license/mit)| Foreign Function Interface for Python calling C code
 | python3-cryptography | python3-cryptography | 39.0.2| [Annex 2](#annex-2) | Provides cryptographic recipes and primitives to python developers
 | python3-ply | python3-ply  | 3.11|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Python Lex and Yacc implementation
