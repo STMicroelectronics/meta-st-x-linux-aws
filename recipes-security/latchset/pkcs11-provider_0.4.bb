@@ -3,7 +3,7 @@ HOMEPAGE = "https://github.com/latchset/pkcs11-provider"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM += "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
 
-inherit autotools pkgconfig
+inherit meson pkgconfig
 
 SRC_URI = "git://github.com/latchset/pkcs11-provider.git;protocol=https;branch=main"
 
@@ -15,8 +15,7 @@ SRC_URI += " \
     file://files/pin.txt \
 "
 
-PV = "0.3"
-SRCREV = "58040b4e32975cc1d7f39e424ee7b0097cd11311"
+SRCREV = "d8e2823bee2268782ec70036618622ee7e87749e"
 
 DEPENDS = "\
     openssl \
@@ -27,28 +26,13 @@ DEPENDS = "\
 
 S = "${WORKDIR}/git"
 
-
-do_configure () {
-    cd ${S}
-    autoreconf -fi 
-    oe_runconf
-}
-
-do_compile() {
-    cd ${S}
-    oe_runmake
-    oe_runmake check
-}
-
-do_install() {
-    cd ${S}
-    oe_runmake install DESTDIR="${D}"
-
+do_install:append() {
     install -d ${D}/etc/pki/
     install -m 0755 ${WORKDIR}/files/openssl-pkcs11-provider-optee.cnf ${D}/etc/pki/openssl-pkcs11-provider-optee.cnf
     install -m 0755 ${WORKDIR}/files/openssl-pkcs11-provider-tpm2.cnf ${D}/etc/pki/openssl-pkcs11-provider-tpm2.cnf
     install -m 0755 ${WORKDIR}/files/pin.txt ${D}/etc/pki/pin.txt
 }
+
 
 RDEPENDS:${PN} += "\
     openssl \

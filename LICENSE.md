@@ -2,7 +2,7 @@
 
 ## Software bill of materials
 
-List of software brought by X-LINUX-AWS expansion package, installed on image **st-image-aws-openstlinux-weston-stm32mp1** in addition to image **st-image-weston-openstlinux-weston-stm32mp1**
+List of software brought by X-LINUX-AWS expansion package, installed on image **st-image-aws** in addition to image **st-image-weston**
 
 | Recipe Name     |  Package Name  | Version  | Copyright  | License  | Description  
 |----------       |----------      |--------  |--------    |--------  |--------
@@ -19,9 +19,9 @@ List of software brought by X-LINUX-AWS expansion package, installed on image **
 | aws-checksums | libaws-checksums1.0.0 | 0.1.17|Amazon.com, Inc. or its affiliates|[Apache-2.0](https://opensource.org/licenses/Apache-2.0)| Cross-Platform HW accelerated CRC32c and CRC32 with fallback to efficient SW implementations. C interface with language bindings for each of our SDKs
 | aws-iot-device-sdk-python-v2| aws-iot-device-sdk-python-v2| 1.19.0|Amazon.com, Inc. or its affiliates|[Apache-2.0](https://opensource.org/licenses/Apache-2.0)| AWS IoT Client SDK for Python using the AWS Common Runtime
 | corretto-11-bin| corretto-11-bin| 11.0.20.9.1|Oracle and/or its affiliates. <br><br>And contributors. |  [Annex 1](#annex-1)| Amazon Corretto 11 is a no-cost, multi-platform, production-ready distribution of OpenJDK 11.
-| demo-application-aws | demo-application-aws | 5.0|STMicroelectronics|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Demonstration application of X-LINUX-AWS
-| greengrass-bin | greengrass-bin | 2.9.6-r1|Amazon.com, Inc. or its affiliates| [Apache-2.0](https://opensource.org/licenses/Apache-2.0)| AWS IoT Greengrass Nucleus - Binary Distribution<br><br>Customized by *meta-st-x-linux-aws* to add Amazon Root CA, configuration file and Greengrass PKCS#11 provider component 2.0.6.
-| pkcs11-provider | pkcs11-provider  | 0.3|simo@redhat.com|[Apache-2.0](https://opensource.org/licenses/Apache-2.0)| A PKCS#11 provider for OpenSSL 3.0+
+| demo-application-aws | demo-application-aws | 5.1|STMicroelectronics|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Demonstration application of X-LINUX-AWS
+| greengrass-bin | greengrass-bin | 2.9.6-r1|Amazon.com, Inc. or its affiliates| [Apache-2.0](https://opensource.org/licenses/Apache-2.0)| AWS IoT Greengrass Nucleus - Binary Distribution<br><br>Customized by *meta-st-x-linux-aws* to add Amazon Root CA, configuration file and Greengrass PKCS#11 provider component 2.0.7.
+| pkcs11-provider | pkcs11-provider  | 0.4|simo@redhat.com|[Apache-2.0](https://opensource.org/licenses/Apache-2.0)| A PKCS#11 provider for OpenSSL 3.0+
 | s2n| libs2n1 | 1.3.51|Amazon.com, Inc. or its affiliates|[Apache-2.0](https://opensource.org/licenses/Apache-2.0)| An implementation of the TLS/SSL protocols
 | tpm2-abrmd | tpm2-abrmd  | 3.0.0| Intel Corporation |[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| TPM2 Access Broker & Resource Manager
 | tpm2-pkcs11 | tpm2-pkcs11  | 1.9.0-r1|g10 Code GmbH<br><br>Andreas Jellinghaus<br><br> Red Hat, Inc. |[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| A PKCS#11 interface for TPM2 hardware.<br><br>Customized by *meta-st-x-linux-aws* to store TPM2 PKCS#11 context in /etc/tpm2_pkcs11
@@ -30,11 +30,10 @@ List of software brought by X-LINUX-AWS expansion package, installed on image **
 | tpm2-tss-engine | tpm2-tss-engine  | 1.1.0| Fraunhofer SIT sponsored by Infineon<br><br>Fraunhofer SIT sponsored by Infineon Technologies AG<br><br>Wind River Systems. |[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Cryptographic engine implementation for OpenSSL for TPM2
 | tpm2-tss | libtss2<br><br>libtss2-mu0<br><br>libtss2-tcti-device0<br><br>libtss2-tcti-mssim0<br><br>tpm2-tss  | 4.0.1|  Andreas Droescher<br><br>Behdad Esfahbod<br><br>Facebook, Inc. and its affiliates<br><br>Fraunhofer SIT<br><br>Fraunhofer SIT sponsored by Infineon Technologies AG<br><br>Intel<br><br>Intel Corporation<br><br>Infineon Technologies AG<br><br>Red Hat Inc.<br><br>Wind River Systems  |[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| OSS implementation of the Trusted Computing Group TPM2 Software Stack
 | trousers | trousers  | 0.3.15+git0+94144b0a1d|Christian Kummer<br><br>TrouSerS Project<br><br>International Business Machines Corp<br><br>Intel Corporation |[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| TrouSerS - An open-source Trusted Computing Group Software Stack Implementation.
-|
 
 
 
-List of software needed by X-LINUX-AWS expansion package, installed on image **st-image-aws-openstlinux-weston-stm32mp1**, available on ST package repository.
+List of software brought by OpenSTLinux, needed by X-LINUX-AWS expansion package, installed on image **st-image-aws**, available on ST package repository.
 
 | Recipe Name     |  Package Name  | Version | License  | Description  
 |----------       |----------      |-------- |--------  |--------
@@ -42,8 +41,7 @@ List of software needed by X-LINUX-AWS expansion package, installed on image **s
 | libtasn1 | libtasn1-6  | 4.19.0|[LGPL-2.1](https://opensource.org/license/lgpl-2-1)|A highly portable C library that encodes and decodes
 | libusb-compat | libusb-0.1-4  | 0.1.8|[LGPL-2.1](https://opensource.org/license/lgpl-2-1)| libusb-0.1 compatibility layer for libusb1
 | opensc | opensc | 0.23.0 |[LGPL-2.1](https://opensource.org/license/lgpl-2-1)| Smart card library and applications.
-| optee-client| optee-client | 3.19.0+git0+140bf46304-r1 |[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause) | Normal World Client side of the TEE<br><br>Customized by *meta-st-x-linux-aws* to bring fix PKCS#11 Trusted Application token information support on 64bit architecture.
-| optee-os-stm32mp| optee-os-stm32mp | 3.19.0-stm32mp-r2|[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| OPTEE TA development kit for stm32mp<br><br>Customized by *meta-st-x-linux-aws* to bring PKCS#11 Trusted Application for OP-TEE.
+| optee-os-stm32mp| optee-os-stm32mp-ta-pkcs11 | 3.19.0-stm32mp-r2|[BSD-2-Clause](htts://opensource.org/licenses/BSD-2-Clause)| PKCS#11 Trusted Application for OP-TEE.
 | p11-kit | p11-kit | 0.24.1|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Provides a way to load and enumerate PKCS#11 modules
 | pcsc-lite | libpcsclite1  | 1.9.9|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)|PC/SC Lite smart card framework and applications
 | python3-cffi | python3-cffi  |1.15.1|[MIT](https://opensource.org/license/mit)| Foreign Function Interface for Python calling C code
@@ -52,7 +50,6 @@ List of software needed by X-LINUX-AWS expansion package, installed on image **s
 | python3-pyasn1 | python3-pyasn1  | 0.4.8|[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| A collection of ASN.1-based protocols modules.
 | python3-pyasn1-modules | python3-pyasn1-modules  | 0.2.8|[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| A collection of ASN.1 modules expressed in form of pyasn1 classes. Includes protocols PDUs definition (SNMP, LDAP etc.) and various data structures (X.509, PKCS etc.).
 | python3-pycparser | python3-pycparser  | 2.21|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Parser of the C language, written in pure Python
-|
 
 ## Annexes
 

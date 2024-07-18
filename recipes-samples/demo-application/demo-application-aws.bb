@@ -3,7 +3,7 @@ HOMEPAGE = "wiki.st.com"
 LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/files/common-licenses/BSD-3-Clause;md5=550794465ba0ec5312d6919e203a55f9"
 
-PV = "5.0"
+PV = "5.1"
 
 SRC_URI = " \
     file://__init__.py \
@@ -18,9 +18,10 @@ do_compile[noexec] = "1"
 
 do_install() {
     install -d ${D}${prefix}/local/demo/application/aws/pictures
+    install -d ${D}${prefix}/local/demo/gtk-application
 
     # install yaml file
-    install -m 0644 ${WORKDIR}/*.yaml ${D}${prefix}/local/demo/application/
+    install -m 0644 ${WORKDIR}/*.yaml ${D}${prefix}/local/demo/gtk-application/
     # install pictures
     install -m 0644 ${WORKDIR}/*.png ${D}${prefix}/local/demo/application/aws/pictures
     # python script
@@ -44,6 +45,7 @@ RDEPENDS:${PN} += "\
 
 FILES:${PN} += "\
     ${prefix}/local/demo/application/ \
+    ${prefix}/local/demo/gtk-application/ \
     ${sysconfdir}/sudoers.d/demo-application-aws \
     "
     

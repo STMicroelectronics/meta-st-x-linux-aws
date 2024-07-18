@@ -11,11 +11,11 @@ FILESEXTRAPATHS:prepend := "${THISDIR}:"
 SRC_URI += " \
     file://files/config_pkcs11.yaml \
     https://www.amazontrust.com/repository/AmazonRootCA1.pem;name=AmazonRootCA1.pem; \
-    https://d2s8p88vqu9w66.cloudfront.net/releases/Pkcs11Provider/aws.greengrass.crypto.Pkcs11Provider-2.0.6.jar;name=Pkcs11Provider.jar;downloadfilename=Pkcs11Provider.jar;unpack=0 \
+    https://d2s8p88vqu9w66.cloudfront.net/releases/Pkcs11Provider/aws.greengrass.crypto.Pkcs11Provider-2.0.7.jar;name=Pkcs11Provider.jar;downloadfilename=Pkcs11Provider.jar;unpack=0 \
     "
 
 SRC_URI[AmazonRootCA1.pem.md5sum] = "7095142f080d1d25221eec161ff14223"
-SRC_URI[Pkcs11Provider.jar.md5sum] = "a6058b389f56f3eae83a9acbcac0be76"
+SRC_URI[Pkcs11Provider.jar.md5sum] = "340c7868503298f9ecd2484f2769d627"
 
 # greengrass-bin needs a correct clock, that should be done by any NTP client.
 # nooelint: oelint.vars.dependsordered

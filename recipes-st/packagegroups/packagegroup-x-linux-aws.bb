@@ -1,6 +1,6 @@
 SUMMARY = "X-LINUX-AWS full components"
 
-PV = "5.0"
+PV = "5.1"
 
 inherit packagegroup
 
@@ -13,8 +13,8 @@ PACKAGES = "                 \
 RDEPENDS:packagegroup-x-linux-aws = "          \
     demo-application-aws                       \
     pkcs11-provider                            \
-    optee-os-stm32mp (>= 3.19.0-stm32mp-r1-r1) \
-    optee-client (>= 3.19.0+git0+140bf46304-r1)\
+    optee-os-stm32mp-ta-pkcs11                 \
+    optee-client                               \
     pcsc-lite                                  \
     opensc                                     \
     "

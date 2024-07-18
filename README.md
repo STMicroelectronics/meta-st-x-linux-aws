@@ -2,7 +2,7 @@
     <img width="720" src="x-linux-aws-logo.png">
 </p>
 
-X-LINUX-AWS is an STM32 MPU OpenSTLinux Expansion Package that targets Amazon Web Services® AWS IoT Greengrass<sup>TM</sup> V2 for STM32MP13 product microprocessors.  
+X-LINUX-AWS is an STM32 MPU OpenSTLinux Expansion Package that targets Amazon Web Services® AWS IoT Greengrass<sup>TM</sup> V2 for STM32MP13 and STM32MP25 product microprocessors.  
 
 It integrates the Greengrass nucleus component to connect to AWS IoT Core<sup>TM</sup> to start and accelerate the development of an IoT solution.  
 
@@ -19,14 +19,14 @@ X-LINUX-AWS OpenEmbedded meta layer to be integrated into OpenSTLinux distributi
 It contains recipes for Amazon Web Services® IoT Greengrass<sup>TM</sup> v2, OP-TEE, TPM and application example.
 
 ## Compatibility
-The X-LINUX-AWS OpenSTLinux Expansion Package v5.0.0 is compatible with the Yocto Project™ build system Mickledore.
-It is validated over the OpenSTLinux Distribution v5.0 on STM32MP135F-DK.
+The X-LINUX-AWS OpenSTLinux Expansion Package v5.1.0 is compatible with the Yocto Project™ build system Mickledore.
+It is validated over the OpenSTLinux Distribution v5.1 on STM32MP135F-DK and STM32MP257F-EV1.
 
 ## Versioning
-Since its release v5.0.0, the major versioning of the X-LINUX-AWS OpenSTLinux Expansion Package is aligned on the major versioning of the OpenSTLinux Distribution. This prevents painful backward compatibility attempts and makes dependencies straightforward.
+Since its release v5.1.0, the major and minor versioning of the X-LINUX-AWS OpenSTLinux Expansion Package are aligned on the major and minor versioning of the OpenSTLinux Distribution. This prevents painful backward compatibility attempts and makes dependencies straightforward.
 The X-LINUX-AWS generic versioning v**x**.**y**.**z** is built as follows:
 * **x**: major version matching the OpenSTLinux Distribution major version. Each new major version is incompatible with previous OpenSTLinux Distribution versions.
-* **y**: minor version, which is changed when new functionalities are added to the X-LINUX-AWS OpenSTLinux Expansion Package in a backward compatible manner.
+* **y**: minor version matching the OpenSTLinux Distribution minor version. Each new minor version might be incompatible with previous OpenSTLinux Distribution versions.
 * **z**: patch version to introduce bug fixes. A patch version is implemented in a backward compatible manner.
 
 ## Further information on X-LINUX-AWS Expansion Package
