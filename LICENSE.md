@@ -29,7 +29,7 @@ List of software brought by X-LINUX-AWS expansion package, installed on image **
 | tpm2-totp | tpm2-totp  | 0.3.0|Behdad Esfahbod<br><br>Fraunhofer SIT<br><br>Jonas Witschel<br><br>Linux TPM2 & TSS2 Software<br><br>Red Hat Inc. |[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Attest the trustworthiness of a device against a human using time-based one-time passwords
 | tpm2-tss-engine | tpm2-tss-engine  | 1.1.0| Fraunhofer SIT sponsored by Infineon<br><br>Fraunhofer SIT sponsored by Infineon Technologies AG<br><br>Wind River Systems. |[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Cryptographic engine implementation for OpenSSL for TPM2
 | tpm2-tss | libtss2<br><br>libtss2-mu0<br><br>libtss2-tcti-device0<br><br>libtss2-tcti-mssim0<br><br>tpm2-tss  | 4.0.1|  Andreas Droescher<br><br>Behdad Esfahbod<br><br>Facebook, Inc. and its affiliates<br><br>Fraunhofer SIT<br><br>Fraunhofer SIT sponsored by Infineon Technologies AG<br><br>Intel<br><br>Intel Corporation<br><br>Infineon Technologies AG<br><br>Red Hat Inc.<br><br>Wind River Systems  |[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| OSS implementation of the Trusted Computing Group TPM2 Software Stack
-| trousers_git | trousers  | 0.3.15+git0+94144b0a1d|Christian Kummer<br><br>TrouSerS Project<br><br>International Business Machines Corp<br><br>Intel Corporation |[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| TrouSerS - An open-source Trusted Computing Group Software Stack Implementation.
+| trousers | trousers  | 0.3.15+git0+94144b0a1d|Christian Kummer<br><br>TrouSerS Project<br><br>International Business Machines Corp<br><br>Intel Corporation |[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| TrouSerS - An open-source Trusted Computing Group Software Stack Implementation.
 |
 
 
@@ -46,7 +46,6 @@ List of software needed by X-LINUX-AWS expansion package, installed on image **s
 | optee-os-stm32mp| optee-os-stm32mp | 3.19.0-stm32mp-r2|[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)| OPTEE TA development kit for stm32mp<br><br>Customized by *meta-st-x-linux-aws* to bring PKCS#11 Trusted Application for OP-TEE.
 | p11-kit | p11-kit | 0.24.1|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Provides a way to load and enumerate PKCS#11 modules
 | pcsc-lite | libpcsclite1  | 1.9.9|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)|PC/SC Lite smart card framework and applications
-| pkgconfig_git | pkgconfig  | 0.29.2+git0+d97db4fae4|[GPL-2.0](https://opensource.org/license/gpl-2-0)|  Tool used when compiling applications and libraries. It helps determined the correct compiler/link options. It is also language-agnostic.
 | python3-cffi | python3-cffi  |1.15.1|[MIT](https://opensource.org/license/mit)| Foreign Function Interface for Python calling C code
 | python3-cryptography | python3-cryptography | 39.0.2| [Annex 2](#annex-2) | Provides cryptographic recipes and primitives to python developers
 | python3-ply | python3-ply  | 3.11|[BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)| Python Lex and Yacc implementation
