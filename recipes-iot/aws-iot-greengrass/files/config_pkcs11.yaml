@@ -1,0 +1,6 @@
+  aws.greengrass.crypto.Pkcs11Provider:
+    configuration:
+      library: "/usr/lib/libckteec.so.0"
+      name: "pkcs11"
+      slot: "1"
+      userPin: "12345"

@@ -1,0 +1,13 @@
+## 
+## weston priviledge specification:
+## - read greengrass effective config
+## - get component list (and stop process)
+## - publish MQTT message (and stop process)
+## - subscribe to MQTT topic (and stop process)
+## 
+weston ALL = (root) NOPASSWD: /bin/cat /opt/greengrass/v2/config/effectiveConfig.yaml ,\
+                              /opt/greengrass/v2/bin/greengrass-cli component list , \
+                              /opt/greengrass/v2/bin/greengrass-cli pubsub *  ,\
+                              /usr/bin/pkill -f *cli.CLI pubsub sub* ,\
+                              /usr/bin/pkill -f *cli.CLI pubsub pub* ,\
+                              /usr/bin/pkill -f *cli.CLI component list*
